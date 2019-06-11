@@ -5,7 +5,7 @@ import QtMultimedia 5.4
 
 ApplicationWindow {
     id: _window
-
+    opacity: 0.5
     // 窗口标题设置
     title: "视频播放"
     // 窗口大小设置
@@ -17,9 +17,10 @@ ApplicationWindow {
 
 
 Rectangle {
+        
         color: "black"
         anchors.fill: parent
-
+        //opacity: 0.5
         MediaPlayer {
             id: mediaPlayer
             source: "file:///D:/Qt/qml/video/dy.avi"
@@ -28,6 +29,7 @@ Rectangle {
 
         VideoOutput {
             id: video
+            //opacity: 0.9
             anchors.fill: parent
             source: mediaPlayer
         }
