@@ -26,7 +26,7 @@ Rectangle {
     
     AnimatedImage {
         id: animated;
-        opacity: 0.05
+        opacity: 0.4
         source: "../img/1.gif"
     }
 

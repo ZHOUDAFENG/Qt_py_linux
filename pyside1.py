@@ -28,7 +28,7 @@ con = MyClass()
 context = view.rootContext()
 context.setContextProperty("con", con)
 context.setContextProperty("mainwindow",view)
-view.setSource(QUrl("./qml/简单.qml"))
+view.setSource(QUrl("./qml/s.qml"))
 
 
 
