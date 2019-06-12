@@ -2,9 +2,8 @@ import sys
 from PySide2.QtGui import QGuiApplication
 from PySide2.QtQml import QQmlApplicationEngine, QQmlFileSelector
 
-sys_argv = sys.argv
-#sys_argv += ['--style', 'material']
-app = QGuiApplication(sys_argv)
+
+app = QGuiApplication()
 
 window = QQmlApplicationEngine()
 

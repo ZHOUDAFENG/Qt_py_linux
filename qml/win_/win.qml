@@ -9,8 +9,9 @@ ApplicationWindow {
     // 窗口标题设置
     title: "视频播放"
     // 窗口大小设置
-    width: 930
-    height: 350
+    width: Screen.width-10
+
+    height: Screen.desktopAvailableWidth-1000
     flags:Qt.FramelessWindowHint
     // Window默认不可见，需要进行设置为可见
     visible: true
@@ -23,12 +24,13 @@ Rectangle {
         //opacity: 0.5
         MediaPlayer {
             id: mediaPlayer
-            source: "file:///D:/Qt/qml/video/dy.avi"
+            source: "file:///home/dafeng/Desktop/Qtlinux/qml/video/dy.avi"
             autoPlay: true
         }
 
         VideoOutput {
             id: video
+            //anchors.fill: parent
             //opacity: 0.9
             anchors.fill: parent
             source: mediaPlayer
@@ -56,6 +58,7 @@ Rectangle{
             {
                 Qt.quit()//无法关闭窗口
                 //mainwindow.close()
+                //console.log(Screen.width) 
                 
                 
             }

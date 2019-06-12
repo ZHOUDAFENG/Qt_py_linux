@@ -169,6 +169,8 @@ Rectangle {
                 mainbox.color=Qt.rgba(0.0,0.0,0.0,0.0)
                 mainwindow.setX(mainwindow.x=100)
                 mainwindow.setY(mainwindow.y=100)
+                //animated4.source="../img/3.png"
+                //console.log(Screen.width) //没定义
             }
         }
     }
